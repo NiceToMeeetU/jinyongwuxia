@@ -58,7 +58,7 @@ $$
 矩阵 $P^{(T_1)},P^{(T_2)}\ \in\mathcal{R}^{M\times n}$ 表示版本 $T_1, T_2$ 的主角共现频率，按列求$KL$散度后再按行求范数即得两版本内容变化评分函数，以此作为模型目标函数：
 $$
 Score = \left \| KL\left ( P^{\left ( T_1 \right ) }\left |  \right | P^{\left ( T_1 \right ) }\right )   \right \|_2
-=\left [ \sum_{k= 1}^{M} \left ( \sum_{j=1}^{n}p_{1j}^{(T_1)} \log{\frac{p_{1j}^{(T_1)}}{p_{1j}^{(T_2)}} }  \right )^2  \right ]^\frac{1}{2}  
+=\left [ \sum_{k= 1}^{M} \left ( \sum_{j=1}^{n}p_{1j}^{(T_1)} \log{\frac{p_{1j}^{(T_1)}}{p_{1j}^{(T_2)}} }  \right )^2  \right ]^\frac{1}{2}
 $$
 几点说明：
 
@@ -116,9 +116,10 @@ $$
 
 经初次识别和分词清洗后二次识别，共在28部作品中抽取到8228个人名实体，进行一定程度的手工筛选后，选取出现频次大于100的合计502个人名进行研究，详见表1。举例对神雕三部曲中提取的人名绘制词云如图1。
 
-<img src="http://wy-typora-img.oss-cn-chengdu.aliyuncs.com/img/image-20210428173122479.png" width="500" div align=center />
+![image-20210428173323963](http://wy-typora-img.oss-cn-chengdu.aliyuncs.com/img/image-20210428173122479.png)
 
-<div align=center>图1 《射雕三部曲》人物词云示意
+<div align=center> 图1 《射雕三部曲》人物词云示意
+
 
 可以看到，三部曲的男主角词云大小有明显差异，郭靖虽然跨越两部作品，但由于《射雕英雄传》是系列第一部，承担着世界观设定的任务，男主起到的情节推动不大；第二部《神雕侠侣》全程基本上单线叙事，杨过的视角占到了绝大篇幅；而第三部《倚天屠龙记》中张无忌到全书四分之一的地方才出场，却仍有与杨过相当的频次，可见本书主角出现频次极高。又因为笔者通读了《倚天》三联版和新修版，故以此作品来检验模型有效性。
 
@@ -175,7 +176,8 @@ $$
 
 ![image-20210428173540259](http://wy-typora-img.oss-cn-chengdu.aliyuncs.com/img/image-20210428173540259.png)
 
-<div align=center>图5 两版《雪山飞狐》主要角色共现频率对比
+<div align=center>图5 两版《雪山飞狐》主要角色共现频率对比 
+
 
 ## 5	总结
 
